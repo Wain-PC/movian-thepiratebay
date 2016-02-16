@@ -1,0 +1,14 @@
+{
+  "description": "The Pirate Bay plugin for Movian. Yarr!",
+  "author": "Wain",
+  "homepage": "http://github.com/Wain-PC",
+  "title": "ThePirateBay",
+  "synopsis": "ThePirateBay",
+  "version": "0.1",
+  "file": "thepiratebay.js",
+  "showtimeVersion": "4.9.389",
+  "type": "ecmascript",
+  "icon": "logo.png",
+  "id": "thepiratebay",
+  "category": "video"
+}
