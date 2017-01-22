@@ -35,7 +35,7 @@
     var nextUrlsRe = /<a href="([\s\w\/]*?)"><img[\s\S]{0,70}?alt="Next"\/?><\/a>/m;
 
     config.urls = {
-        base: 'http://' + service.domain
+        base: 'https://' + service.domain
     };
 
 
