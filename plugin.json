@@ -4,7 +4,7 @@
   "homepage": "http://github.com/Wain-PC",
   "title": "ThePirateBay",
   "synopsis": "ThePirateBay",
-  "version": "0.2",
+  "version": "0.2.1",
   "file": "thepiratebay.js",
   "showtimeVersion": "4.9.389",
   "type": "ecmascript",
