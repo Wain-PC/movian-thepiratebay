@@ -1,10 +1,10 @@
 {
   "description": "The Pirate Bay plugin for Movian. Yarr! Download music, movies, games, software and much more. The Pirate Bay is the galaxy's most resilient BitTorrent site.",
-  "author": "Wain",
-  "homepage": "http://github.com/Wain-PC",
+  "author": "Wain updated by bkmd100",
+  "homepage": "http://github.com/bkmd100",
   "title": "ThePirateBay",
   "synopsis": "ThePirateBay",
-  "version": "0.2.1",
+  "version": "0.2.69",
   "file": "thepiratebay.js",
   "showtimeVersion": "4.9.389",
   "type": "ecmascript",
