@@ -29,7 +29,7 @@
     var html = require('showtime/html');
     settings.createInfo("info", config.logo, "Plugin developed by " + config.pluginInfo.author + ". \n");
     settings.createDivider('Settings');
-    settings.createString("domain", "Domain", "https://thepiratebay3.org", function (v) {
+    settings.createString("domain", "Domain", "https://thepiratebay10.org", function (v) {
         service.domain = v;
     });
     var nextUrlsRe = /<a href="([\s\w\/]*?)"><img[\s\S]{0,70}?alt="Next"\/?><\/a>/m;
@@ -151,10 +151,10 @@
         name = decodeURIComponent(name);
         setPageHeader(page, name);
         page.loading = true;
-        dom = html.parse(showtime.httpReq(config.urls.base + decodeURIComponent(url)).toString());
+        dom = html.parse(showtime.httpReq( decodeURIComponent(url)).toString());
         page.loading = false;
 
-        magnetUrl = dom.root.getElementByClassName('download')[0].getElementByTagName('a')[0].attributes.getNamedItem('href').value;
+        magnetUrl = dom.root.getElementByClassName('download')[0].getElementByTagName('a')[0].attributes.getNamedItem('href').value + "&tr=udp%3A%2F%2Ftracker.leechers-paradise.org%3A6969&tr=udp%3A%2F%2Ftracker.openbittorrent.com%3A80&tr=udp%3A%2F%2Fopen.demonii.com%3A1337&tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969&tr=udp%3A%2F%2Fexodus.desync.com%3A6969";
         torrentDescription = dom.root.getElementByClassName('nfo')[0].textContent;
         page.appendItem("torrent:browse:" + magnetUrl, "directory", {
             title: 'magnet: ' + name,
